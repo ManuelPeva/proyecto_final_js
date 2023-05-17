@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
     <title>Registro</title>
 </head>
 
@@ -14,7 +15,7 @@
     <section>
         <form id="signupForm">
             <label>Nombre</label>
-            <input type="text" placeholder="Nombre" required autofocus>
+            <input type="text" id="name" placeholder="Nombre" required autofocus>
             <label>Mail</label>
             <input type="email" name="email" id="email" placeholder="Email" required autofocus>
             <label>Contraseña</label>
@@ -23,7 +24,8 @@
         </form>
         <p><a href="./login.html">¿Ya tienes una cuenta?</a></p>
     </section>
-    <script src="./js/login.js"></script>
+    <script src="./js/signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
