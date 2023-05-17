@@ -81,3 +81,17 @@ section p a{
     text-decoration: none;
     color: #003DFF;
 }
+
+/*HOME*/
+
+section button {
+    background-color: #003DFF;
+    color: white;
+    transition: var(--transition);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    margin-top: 1.5em;
+    font-size: 1em;
+    
+}
