@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.min.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" />
+    <title>ATM</title>
 </head>
-<body>
+
+<body style="background-color: #062147;">
     <section>
-        <h1>Home</h1>
-        <button id="logout">Logout</button>
+        <button id="logout" class="back-button"><i class="fas fa-arrow-left"></i></button>
     </section>
+    <div id="price-container">
+        <p>Compra de oro $13,800</p>
+        <p>Compra de plata $270</p>
+        <p>Venta de oro $19,980</p>
+        <p>Venta de plata $425</p>
+    </div>
+
+    <button id="toggle-button" class="off">
+        <span id="toggle-text">Apagar tarjeta</span>
+      </button>
+      
+      <div class="card">
+        <h2>Saldo actual</h2>
+        <div class="balance">
+          <span class="amount">$990</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <label for="transfer-amount">Monto a retirar:</label>
+        <input type="number" id="transfer-amount" placeholder="Ingrese el monto">
+        <button id="transfer-button">Retirar</button>
+
+        <label for="transfer-input">Monto a transferir:</label>
+        <input type="number" id="transfer-input" placeholder="Ingrese el monto">
+        <button id="transfer-button">Transferir</button>
+      
+        <div id="report-container"></div>
+      </div>
+      
+            
     <script src="./js/index.js"></script>
+    <script src="./js/transicion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.6/dist/sweetalert2.all.min.js"></script>
+
 </body>
+
 </html>

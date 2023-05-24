@@ -32,6 +32,7 @@ section h2{
     width: 100%;
     margin-bottom: 1em;
     font-size: 2.5em;
+    color: white;
 }
 
 section form{
@@ -40,7 +41,7 @@ section form{
     flex-wrap: wrap;
     max-width: 500px;
     border-radius: 20px;
-    border: 2px solid rgba(0,0,0,0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 section form input{
@@ -55,7 +56,7 @@ section form input{
     padding: 0.8em;
     border-radius: 9px;
     border: none;
-    outline-color: blue;
+    outline-color: #062147;
     background-color: rgba(255, 255, 255, 0.668);
     font-family: var(--font-mono);
     transition: var(--transition);
@@ -63,7 +64,7 @@ section form input{
 
 section form input[type="submit"]{
     margin-top: 1.5em;
-    background-color: blue;
+    background-color: #062147;
     color: white;
     font-family: var(--font-mono);
     transition: var(--transition);
@@ -79,22 +80,138 @@ section p{
 
 section p a{
     text-decoration: none;
-    color: #003DFF;
+    color: #ffffff;
 }
 
 /*HOME*/
 
 section button {
-    background-color: #003DFF;
+    background-color: transparent;
     color: white;
     transition: var(--transition);
     border: none;
     padding: 0.5em 1em;
     border-radius: 9px;
-    margin-top: 1.5em;
     font-size: 1em;
     
 }
+
+.back-button {
+    margin-top: -38%;
+    margin-right: 80%;
+   
+  }
+  
+  .back-button i {
+    margin-right: 5px;
+  }
+
+#price-container p{
+    color: white;
+    margin-top: -43%;
+    margin-left: 33%;
+    
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .on {
+    background-color: green;
+    border-radius: 52px;
+    margin-left: 15%;
+    margin-top: 6%;
+  }
+  
+  .off {
+    background-color: red;
+    border-radius: 52px;
+    margin-left: 15%;
+    margin-top: 6%;
+
+  }
+  
+  #toggle-text {
+    margin-left: 10px;
+  }
+  
+
+/*card*/
+.card {
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 25%;
+  }
+
+  @keyframes progressAnimation {
+    0% { width: 0; }
+  }
+  
+  .card {
+    /* Estilos de la tarjeta */
+  }
+  
+  .progress-bar {
+    /* Estilos de la barra de progreso */
+    animation: progressAnimation 1s forwards;
+  }
+  
+/*transferir*/
+.transferir{
+    border-radius: 32px;
+    margin-top: 10px;
+    background-color: #12448b;
+}
+
+.entrada{
+    border: none;
+}
+
+
+
+
+  
+  .balance {
+    margin-top: 20px;
+  }
+  
+  .amount {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+    animation: progressAnimation 1s forwards, flashAnimation 3s infinite;
+  }
+  
+  .progress {
+    width: 60%; /* Valor de ejemplo para la barra de progreso */
+    height: 100%;
+    background-color: green;
+    transition: width 0.10s ease; /* Animación de transición suave */
+    
+  }
+  
+  
+
+
+
+
+
 
 
 /*fondo de login*/
